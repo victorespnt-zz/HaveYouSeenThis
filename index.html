@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+	<head>	
+
+		<meta charset="utf-8" />
+		<title>TuLaVu</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	</head>
+
+	<body>
+
+<div id="app">
+
+		<div id="Movies">
+
+			<h1>Listing de mes films</h1>
+			<!-- C'est ici que sera affichée notre liste de films -->
+			<ul class="movie-list"></ul>
+
+			<!-- Le formulaire d'entrée des films -->
+			<form action="#">
+				<input type="text" placeholder="title" class="movie-title" required>
+				<input type="text" placeholder="Poster URL" class="movie-poster" required>
+				<input type="submit" value="Ajouter">
+			</form>
+		</div><!--#Movies-->
+
+		<!-- Mes films -->
+		<div class="stats">
+			<p>Je possède <span class="movie-total">0</span> Films</p>
+			<p>J'en ai vu <span class="movie-seen-total">0</span></p>
+			<p>Je n'en ai pas vu <span class="movie-unseen-total">0</span></p>
+		</div>
+
+</div><!--#container-->
+		<div id="footer">
+		</div><!--#footer-->
+
+
+
+		<!-- Librairies Backbone : jquery, UnderScore, Backbone  -->
+		<!-- LIBS -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+	<script src="backbone.js"></script>
+		<!-- LIBS -->
+
+		<!-- Script de notre appli -->
+		<script src="scripts/models/movie-model.js"></script>
+		<script src="scripts/collections/movie-collection.js"></script>
+		<script src="scripts/views/movie-list.js"></script>
+		<script src="scripts/app.js"></script>
+
+
+		<!-- Script de notre appli -->
+
+	</body>
